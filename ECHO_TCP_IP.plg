@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ECHO_TCP_IP - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Release/ECHO_TCP_IP.res" /d "NDEBUG" /d "_AFXDLL" "G:\!!CPY_NEW!!\ECHO_TCP_IP\ECHO_TCP_IP.rc"" 
+Creating temporary file "C:\Users\Wiz\AppData\Local\Temp\RSP849B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/ECHO_TCP_IP.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\!!CPY_NEW!!\ECHO_TCP_IP\AboutBox.cpp"
+"G:\!!CPY_NEW!!\ECHO_TCP_IP\ECHO_TCP_IP.cpp"
+"G:\!!CPY_NEW!!\ECHO_TCP_IP\ECHO_TCP_IPDlg.cpp"
+"G:\!!CPY_NEW!!\ECHO_TCP_IP\SettingBox.cpp"
+"G:\!!CPY_NEW!!\ECHO_TCP_IP\StatusDialog.cpp"
+"G:\!!CPY_NEW!!\ECHO_TCP_IP\xClistBox.cpp"
+]
+Creating command line "cl.exe @C:\Users\Wiz\AppData\Local\Temp\RSP849B.tmp" 
+Creating temporary file "C:\Users\Wiz\AppData\Local\Temp\RSP849C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/ECHO_TCP_IP.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\!!CPY_NEW!!\ECHO_TCP_IP\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Wiz\AppData\Local\Temp\RSP849C.tmp" 
+Creating temporary file "C:\Users\Wiz\AppData\Local\Temp\RSP84AD.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/ECHO_TCP_IP_release.pdb" /machine:I386 /out:"ECHO_TCP_IP_release.exe" 
+".\Release\AboutBox.obj"
+".\Release\ECHO_TCP_IP.obj"
+".\Release\ECHO_TCP_IPDlg.obj"
+".\Release\SettingBox.obj"
+".\Release\StatusDialog.obj"
+".\Release\StdAfx.obj"
+".\Release\xClistBox.obj"
+".\Release\ECHO_TCP_IP.res"
+]
+Creating command line "link.exe @C:\Users\Wiz\AppData\Local\Temp\RSP84AD.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+G:\!!CPY_NEW!!\ECHO_TCP_IP\ECHO_TCP_IP.rc(399) : fatal error RC1015: cannot open include file 'res\ECHO_TCP_IP.rc2'.
+Error executing rc.exe.
+Creating command line "bscmake.exe /nologo /o"Release/ECHO_TCP_IP.bsc"  ".\Release\StdAfx.sbr" ".\Release\AboutBox.sbr" ".\Release\ECHO_TCP_IP.sbr" ".\Release\ECHO_TCP_IPDlg.sbr" ".\Release\SettingBox.sbr" ".\Release\StatusDialog.sbr" ".\Release\xClistBox.sbr""
+Creating browse info file...
+BSCMAKE: error BK1506 : cannot open file '.\Release\StdAfx.sbr': No such file or directory
+Error executing bscmake.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ECHO_TCP_IP_release.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

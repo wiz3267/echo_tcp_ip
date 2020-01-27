@@ -1,0 +1,405 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ECHO_TCP_IP.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ECHO_TCP_IP.ico"
+ICON_SYSTRAY            ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ECHO_TCP_IP_DIALOG DIALOGEX 0, 0, 376, 174
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TCP/IP Chat"
+MENU IDR_MAIN_MENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_INPUT,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_BORDER | WS_TABSTOP,
+                    0,110,375,62
+    CONTROL         "",IDC_RICHEDIT,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_NUMBER | WS_BORDER | WS_VSCROLL,0,0,315,
+                    110
+    EDITTEXT        IDC_INPUT_BOX,0,0,0,0,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_USER_LIST,315,0,57,110,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_SETTINGBOX DIALOG DISCARDABLE  0, 0, 396, 228
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Панель настроек"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Применить",IDOK,4,208,388,14
+    PUSHBUTTON      "Соединиться",IDC_CONNECT,128,12,56,15
+    CONTROL         "автосоединение при запуске",IDC_CONNECT_ON_START,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,35,115,10
+    LTEXT           "Адрес:",IDC_STATIC,10,14,24,8
+    GROUPBOX        "Удаленный компьютер",IDC_STATIC,0,0,188,52
+    PUSHBUTTON      "Цвет",IDC_SELECT_COLOR,51,60,36,14
+    PUSHBUTTON      "Шрифт",IDC_SELECT_FONT,5,60,40,14
+    EDITTEXT        IDC_FONT_SIZE,145,135,30,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "Размер:",IDC_STATIC,5,80,29,8
+    GROUPBOX        "Вид",IDC_STATIC,0,52,190,48
+    EDITTEXT        IDC_GREETING,248,180,145,14,ES_AUTOHSCROLL
+    LTEXT           "Приветствие:",IDC_STATIC,196,184,47,8
+    LTEXT           "Ник:",IDC_STATIC,200,144,20,8
+    EDITTEXT        IDC_NICK_NAME,248,140,76,14,ES_AUTOHSCROLL
+    GROUPBOX        "Автозагрузка",IDC_STATIC,0,95,190,30
+    CONTROL         "",IDC_COLOR_BOX,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,95,60,88,36
+    GROUPBOX        "Сервер",IDC_STATIC,190,0,205,56
+    CONTROL         "Автостарт сервера после загрузки",
+                    IDC_RUN_SERVER_ON_START,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,12,136,10
+    EDITTEXT        IDC_PORT,227,30,40,14,ES_AUTOHSCROLL
+    LTEXT           "Порт:",IDC_STATIC,200,33,20,8
+    PUSHBUTTON      "Старт",IDC_SERVER_RUN,271,30,47,14
+    PUSHBUTTON      "Стоп",IDC_SERVER_STOP,323,30,50,14
+    CONTROL         "Загружаться каждый раз при старте системы",
+                    IDC_LOAD_ON_SYSTEM_START,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,110,173,10
+    GROUPBOX        "Персональные данные",IDC_STATIC,190,124,205,76
+    CONTROL         "Включить звук",IDC_SOUND_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,195,65,66,10
+    GROUPBOX        "Разное",IDC_STATIC,192,52,204,73
+    EDITTEXT        IDC_IP_SERVER,40,12,78,14,ES_AUTOHSCROLL
+    CONTROL         "Нет автопрокрутки",IDC_NO_AUTO_SCROLL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,80,81,10
+    CONTROL         "Системные уведомления",IDC_SYSTEM_MESSAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,195,80,100,10
+    CONTROL         "Разрешать посимвольный ввод(*)",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,10,135,131,10
+    CONTROL         "Автоочистка чат-окна",IDC_AUTO_CLEAR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,65,89,10
+    CONTROL         "Активировать чат при приеме нового сообщения",
+                    IDC_AUTO_CHAT_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    195,96,183,10
+    LTEXT           "Пароль:",IDC_STATIC,200,164,28,8
+    EDITTEXT        IDC_EDIT1,248,160,75,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER_FONT_SIZE,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,40,80,55,11
+    CONTROL         "Игнорировать входящую музыку",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,10,150,127,10
+    CONTROL         "Разрешить приватные сообщения",IDC_CHECK6,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,10,174,132,10
+    CONTROL         "Разрешить игры в чате (только для админа)",
+                    IDC_enabled_chat_game,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,10,162,165,10
+    GROUPBOX        "Дополнительно",IDC_STATIC,0,124,190,76
+    CONTROL         "Разрешить удалить пользователя (для сервера)",
+                    IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_DISABLED | 
+                    WS_TABSTOP,10,185,178,10
+    CONTROL         "Разрешить записывать лог чата",
+                    IDC_ENABLE_WRITE_LOG_FILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,196,110,126,10
+    PUSHBUTTON      "Аборт",IDC_CONNECT_ABORT,128,32,56,15
+END
+
+IDD_ABOUT_BOX DIALOG DISCARDABLE  0, 0, 299, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О программе . . ."
+FONT 10, "Verdana"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,4,64,50,11
+    LTEXT           "(c) 2005 Лапшин Е.О.  (основная идея, программирование чата)",
+                    IDC_STATIC,65,5,224,8
+    LTEXT           "Версия: 1.1.0.345",IDC_STATIC,65,65,62,8
+    LTEXT           "Static",IDC_INFO,130,65,165,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,20,28,20,20
+    LTEXT           "Отдельное спасибо: Avan (ценные замечания, бета-тестирование)",
+                    IDC_STATIC,65,20,233,8
+    LTEXT           "Отдельное спасибо: Sligrik (размещение сервера)",
+                    IDC_STATIC,65,35,173,8
+    LTEXT           "Спасибо: Ведьмак (за новые добавления)",IDC_STATIC,66,
+                    50,145,8
+END
+
+IDD_STATUS_DIALOG DIALOG DISCARDABLE  0, 0, 184, 97
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,75,50,14
+    EDITTEXT        IDC_EDIT1,0,0,184,68,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ECHO_TCP_IP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_SETTINGBOX, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_ABOUT_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_STATUS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "Очистить лог",                IDC_CLEAR_LOG
+        MENUITEM "&Загрузить лог",              ID_MENU_LOAD_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "&Отослать файл",              ID_FILE_SEND
+        MENUITEM SEPARATOR
+        MENUITEM "Вы&ход",                      ID_FILE_EXIT
+    END
+    POPUP "&Cервис"
+    BEGIN
+        MENUITEM "&Запуск сервера",             ID_MENU_RUN_SERVER
+        MENUITEM "&Остановка сервера",          ID_MENU_STOP_SERVER
+        MENUITEM SEPARATOR
+        MENUITEM "Отключиться от сервера",      IDC_DISCONNECT
+        MENUITEM "Соединиться с сервером",      IDC_CONNECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Настройки",                  ID_MENU_SETTING_BOX
+    END
+    POPUP "Соединения"
+    BEGIN
+        MENUITEM SEPARATOR
+    END
+    POPUP "Помощь"
+    BEGIN
+        MENUITEM "О программе",                 ID_ABOUT
+    END
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ECHO_TCP_IP"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ECHO_TCP_IP Version 1.0.0.5",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,59
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ECHO_TCP_IP MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 59\0"
+            VALUE "InternalName", "TCP/IP Chat\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003-2007 Лапшин Евгений Олегович\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ECHO_TCP_IP.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ECHO_TCP_IP Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ECHO_TCP_IP..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ECHO_TCP_IP.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,58 @@
+# Microsoft Developer Studio Generated Dependency File, included by ECHO_TCP_IP.mak
+
+.\AboutBox.cpp : \
+	".\AboutBox.h"\
+	".\ECHO_TCP_IP.h"\
+	
+
+.\ECHO_TCP_IP.cpp : \
+	".\ECHO_TCP_IP.h"\
+	".\ECHO_TCP_IPDlg.h"\
+	".\SettingBox.h"\
+	".\usersettings.h"\
+	".\xClistBox.h"\
+	
+
+.\ECHO_TCP_IP.rc : \
+	".\res\ECHO_TCP_IP.ico"\
+	".\res\ECHO_TCP_IP.rc2"\
+	".\res\icon1.ico"\
+	
+
+.\ECHO_TCP_IPDlg.cpp : \
+	".\AboutBox.h"\
+	".\ECHO_TCP_IP.h"\
+	".\ECHO_TCP_IPDlg.h"\
+	".\piano_plugin\pianores.h"\
+	".\piano_plugin\resource.h"\
+	".\RegKeyAdv.h"\
+	".\SettingBox.h"\
+	".\sockets.h"\
+	".\StatusDialog.h"\
+	".\usersettings.h"\
+	".\xClistBox.h"\
+	
+
+.\SettingBox.cpp : \
+	".\ECHO_TCP_IP.h"\
+	".\ECHO_TCP_IPDlg.h"\
+	".\RegKeyAdv.h"\
+	".\SettingBox.h"\
+	".\usersettings.h"\
+	".\xClistBox.h"\
+	
+
+.\StatusDialog.cpp : \
+	".\ECHO_TCP_IP.h"\
+	".\StatusDialog.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"d:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\xClistBox.cpp : \
+	".\ECHO_TCP_IP.h"\
+	".\xClistBox.h"\
+	
