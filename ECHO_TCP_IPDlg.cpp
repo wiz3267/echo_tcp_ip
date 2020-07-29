@@ -1888,7 +1888,7 @@ void CECHO_TCP_IPDlg::OnLButtonDown(UINT nFlags, CPoint point )
 //////////////////////////////////////////////////////////////////////////
 
 
-#include "piano_plugin\pianores.h"
+//#include "piano_plugin\pianores.h"
 void CECHO_TCP_IPDlg::OnRButtonDown(UINT nFlags, CPoint point)
 {
     OnMenuSettingBox();
